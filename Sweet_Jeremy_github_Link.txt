@@ -1,8 +1,8 @@
 Live Publish
-http://w78681.github.io/ServerRepo
+http://w78681.github.io/SrvRepo-MiU
 
 master
-https://github.com/w78681/myrepo/tree/master
+https://github.com/w78681/SrvRepo-MiU
 
 gh-pages
-https://github.com/w78681/myrepo/tree/gh-pages
+https://github.com/w78681/SrvRepo-MiU/tree/gh-pages
