@@ -1,0 +1,8 @@
+Live Publish
+http://w78681.github.io/ServerRepo
+
+master
+https://github.com/w78681/myrepo/tree/master
+
+gh-pages
+https://github.com/w78681/myrepo/tree/gh-pages
