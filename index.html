@@ -81,14 +81,14 @@
 			
 			<div class="content-primary"> <!-- Content -->
 				<div style="padding:10px;">
-					<p id="errorMessage"></p>
+					<p id="errorMessage">* indicates required field</p>
 					<form action="" id="addItemForm">
 						<div data-role="fieldcontain">
-							<label for="itemName">Item Name:</label>
+							<label for="itemName">Item Name: *</label>
 							<input type="text" name="itemName" id="itemName" value="Kraft Cheese" />
 						</div>
 						<div data-role="fieldconatin">
-							<label for="itemType" class="select">Type of Item:</label>
+							<label for="itemType" class="required">Type of Item: *</label>
 							<select name="itemType" id="itemType">
 							   <option value="Food">Food</option>
 							   <option value="Product">Product</option>
@@ -96,23 +96,23 @@
 							</select>
 						</div>
 						<div data-role="fieldcontain">
-							<label for="itemName">Item Cost:</label>
+							<label for="itemName">Item Cost: *</label>
 							<input type="text" name="itemName" id="itemName" value="3" />
 						</div>
 						<div data-role="fieldcontain">
-							<label for="itemAmount">Amount:</label>
+							<label for="itemAmount">Amount: *</label>
 							<input type="range" name="itemAmount" id="itemAmount" value="1" min="1" max="100" />
 						</div>
 						<div data-role="fieldcontain">
 							<label><input type="checkbox" name="itemSpoil" value="Yes" />Item Can Spoil</label>
 						</div>
 						<div data-role="fieldcontain">
-							<label for="itemRemovedDate">Remove Item:</label>
+							<label for="itemRemovedDate">Remove Item From Shelves by:</label>
 							<input type="date" name="itemRemoveDate" id="itemRemoveDate" />
 						</div>							
 						<div data-role="fieldcontain">
-							<label for="itemDescription">Item Description</label>
-							<textarea name="itemDescription" id="itemDescription">test</textarea>
+							<label for="itemDescription">Item Description:</label>
+							<textarea name="itemDescription" id="itemDescription">A brief description of the item if needed.</textarea>
 						</div>
 					</form>
 				</div>					
