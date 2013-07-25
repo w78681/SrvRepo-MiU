@@ -186,7 +186,7 @@ function clearTheData (){
 function validateItem(eventData){
 	var getItemName = getelement('itemname');
 	var getItemCost = getelement('itemcost');
-	
+	var getItemAmmount = getelement('itemammount');
 	//reset error messages
 	myValidiationErrorMsg.innerHTML = "";
 	getItemName.style.border = "1px solid black";
@@ -204,6 +204,11 @@ function validateItem(eventData){
 		var itemCostError = "Please add an item cost."
 		getItemCost.style.border = "1px solid red";
 		errorMsgArray.push(itemCostError);		
+	}
+	if(getItemAmmount.value === ""){
+		var itemAmmountError = "Please add an item ammount."
+		getItemAmmount.style.border = "1px solid red";
+		errorMsgArray.push(itemAmmountError);		
 	}
 	//Valid numbers
 	var regexNumber = /^(([0-9]*)|(([0-9]*).([0-9]*)))$/;
