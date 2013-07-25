@@ -87,7 +87,7 @@
 					<form action="" id="addItemForm">
 						<div data-role="fieldcontain">
 							<label for="itemName">Item Name: *</label>
-							<input type="text" name="itemName" id="itemName" class="required" />
+							<input type="text" name="itemName" id="itemName" value="Cheese" class="required" />
 							<label for="itemName" class="hint">Ex: Kraft Cheese</label>
 							<label for="itemName" class="error"></label>
 						</div>
@@ -101,7 +101,7 @@
 						</div>
 						<div data-role="fieldcontain">
 							<label for="itemCost">Item Cost: *</label>
-							<input type="text" name="itemCost" id="itemCost" class="required number" />
+							<input type="text" name="itemCost" id="itemCost" value="3" class="required number" />
 							<label for="itemCost" class="hint">Ex: "3" or "3.50"</label>
 							<label for="itemCost" class="error"></label>
 
@@ -112,12 +112,12 @@
 						</div>
 						<div data-role="fieldcontain">
 							<label for="itemRemoveDate">Remove Item From Shelves by: *</label>
-							<input type="date" name="itemRemoveDate" id="itemRemoveDate" class="required date" />
+							<input type="date" name="itemRemoveDate" id="itemRemoveDate" class="required date" value="Jul 30, 2013" />
 							<label for="itemRemoveDate" class="hint">Ex: Jul 28, 2013</label>
 							<label for="itemRemoveDate" class="error"></label>
 						</div>	
 						<div data-role="fieldcontain">
-							<label><input type="checkbox" name="itemSpoil" value="Yes" />Item Can Spoil</label>
+							<label><input type="checkbox" name="itemSpoil" value="Yes" />Item Can Spoil:</label>
 						</div>						
 						<div data-role="fieldcontain">
 							<label for="itemDescription">Item Description:</label>
@@ -151,8 +151,10 @@
 			</div>  <!-- /HeaderBar|Navigation -->
 			
 			<div class="content-primary"> <!-- Content -->
-				<div style="padding:10px;">
-					
+				<div style="padding:10px;" id="contentDiv">
+					<div data-role="fieldconatin">
+						<input type="submit" id="clearLocal" value="Clear Local Storage" data-theme="b" />
+					</div>
 				</div>					
 			</div> <!-- /Content -->
 			 
