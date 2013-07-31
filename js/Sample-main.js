@@ -128,6 +128,7 @@ $('#pageEditItemForm').on('pageinit', function(){
 });	
 
 $('#pageInventory').on('pageinit', function(){
+	
 	$('#ul').listview('refresh');
 
 
@@ -170,8 +171,6 @@ clearLink.addEventListener("click", clearLocal);
 });	
 
 //The functions below can go inside or outside the pageinit function for the page in which it is needed.
-
-
 
 // get icon based on localstorage category field
 function getIcon(mySubLi, iconCategory){
