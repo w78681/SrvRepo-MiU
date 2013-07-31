@@ -129,7 +129,7 @@ $('#pageEditItemForm').on('pageinit', function(){
 
 $('#pageInventory').on('pageinit', function(){
 	
-	$('#ul').listview('refresh');
+	//$('#ul').listview('refresh');
 
 
 var clearLink = document.getElementById('clearLocal');
@@ -154,8 +154,6 @@ clearLink.addEventListener("click", clearLocal);
 		var value = localStorage.getItem(key);
 		var myObject = JSON.parse(value);
 		var mySubLi = document.createElement('ul');
-			mySubLi.setAttribute("data-role", "listview");
-			mySubLi.setAttribute("data-filter", "true");	
 		myli.appendChild(mySubLi);
 		getIcon(mySubLi, myObject.category[1]);
 		for (var n in myObject){

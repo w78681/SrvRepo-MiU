@@ -3,3 +3,10 @@ label.error{display:none}
 label.hint{font-size:xx-small}
 
 label.error.ui-input-text{display:block; margin:10px 0; color:red}
+
+.ui-page.ui-body-c {
+    background: url(../img/background.jpg);
+    background-repeat:no-repeat;
+    background-position:center center;
+    background-size:cover;  
+}
