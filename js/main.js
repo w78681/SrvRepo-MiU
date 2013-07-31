@@ -113,7 +113,7 @@ function autoFillData(){
 function makeItemLinks(key, linksli){ //create edit and delete nav for displayed items
 	//edit item link
 	var editItemLink = document.createElement('a');
-	editItemLink.href = "#pageEditItemForm";
+	editItemLink.href = "#";
 	editItemLink.key = key;
 	var editItemText = "Edit ";
 	editItemLink.addEventListener("click", editMyItem);

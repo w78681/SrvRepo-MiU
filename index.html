@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!-- 		 Jeremy "Jay" Sweet             -->
 <!--  Mobile Interfaces and Usability 1307  -->
-<!-- 	  Project 3 - 24 July 2013          -->
+<!-- 	  Project 4 - 31 July 2013          -->
 <html> 
 <!-- All head infomation goes here -->
 	<head>
@@ -24,6 +24,7 @@
 	<!-- GOLD APP -->		
 		<div data-role="page" id="pageMain">  <!-- Main page -->
 			<div data-role="header" data-position="fixed" data-theme="a"> <!-- HeaderBar|Navigation -->
+				<img border="0" src="img/logo-small.png" alt="Logo" style="float:right;display:inline"/>
 				<h1>Gold: Discount Grocery</h1>
 			</div>  <!-- /HeaderBar|Navigation -->
 			
@@ -81,6 +82,7 @@
 		
 		<div data-role="page" id="pageAddItemForm" data-add-back-btn="true">  <!-- Add Item Form page -->
 			<div data-role="header" data-position="fixed" data-theme="a"> <!-- HeaderBar|Navigation -->
+				<img border="0" src="img/logo-small.png" alt="Logo" style="float:right;display:inline"/>
 				<h1>Gold: Discount Grocery</h1>
 			</div>  <!-- /HeaderBar|Navigation -->
 			
@@ -90,7 +92,7 @@
 					<form action="" id="addItemForm">
 						<div data-role="fieldcontain">
 							<label for="itemName">Item Name: *</label>
-							<input type="text" name="itemName" id="itemName" value="Cheese" class="required" />
+							<input type="text" name="itemName" id="itemName" class="required" />
 							<label for="itemName" class="hint">Ex: Kraft Cheese</label>
 							<label for="itemName" class="error"></label>
 						</div>
@@ -104,7 +106,7 @@
 						</div>
 						<div data-role="fieldcontain">
 							<label for="itemCost">Item Cost: *</label>
-							<input type="text" name="itemCost" id="itemCost" value="3" class="required number" />
+							<input type="text" name="itemCost" id="itemCost" class="required number" />
 							<label for="itemCost" class="hint">Ex: "3" or "3.50"</label>
 							<label for="itemCost" class="error"></label>
 
@@ -115,7 +117,7 @@
 						</div>
 						<div data-role="fieldcontain">
 							<label for="itemRemoveDate">Remove Item From Shelves by: *</label>
-							<input type="date" name="itemRemoveDate" id="itemRemoveDate" class="required date" value="Jul 30, 2013" />
+							<input type="date" name="itemRemoveDate" id="itemRemoveDate" class="required date" />
 							<label for="itemRemoveDate" class="hint">Ex: Jul 28, 2013</label>
 							<label for="itemRemoveDate" class="error"></label>
 						</div>	
@@ -148,13 +150,14 @@
 
 		<div data-role="page" id="pageEditItemForm" data-add-back-btn="true">  <!-- Edit Item Form page -->
 			<div data-role="header" data-position="fixed" data-theme="a"> <!-- HeaderBar|Navigation -->
+				<img border="0" src="img/logo-small.png" alt="Logo" style="float:right;display:inline"/>
 				<h1>Gold: Discount Grocery</h1>
 			</div>  <!-- /HeaderBar|Navigation -->
 			
 			<div class="content-primary"> <!-- Content -->
 				<div style="padding:10px;">
 					<p id="errorMessage">* indicates required field</p>
-					<form action="" id="addItemForm">
+					<form action="" id="editItemForm">
 						<div data-role="fieldcontain">
 							<label for="itemName">Item Name: *</label>
 							<input type="text" name="itemName" id="itemName" value="Cheese" class="required" />
@@ -194,7 +197,7 @@
 							<textarea name="itemDescription" id="itemDescription">A brief description of the item if needed.</textarea>
 						</div>
 						<div data-role="fieldcontain">
-							<input type="submit" id="itemSubmit" value="Submit Item" data-theme="a" />
+							<input type="submit" id="itemSubmit" value="Edit Item" data-theme="a" />
 						</div>
 					</form>
 				</div>					
@@ -215,6 +218,7 @@
 		
 		<div data-role="page" id="pageInventory" data-add-back-btn="true">  <!-- Inventory page -->
 			<div data-role="header" data-position="fixed" data-theme="a"> <!-- HeaderBar|Navigation -->
+				<img border="0" src="img/logo-small.png" alt="Logo" style="float:right;display:inline"/>
 				<h1>Gold: Discount Grocery</h1>
 			</div>  <!-- /HeaderBar|Navigation -->
 			
@@ -241,6 +245,7 @@
 		
 		<div data-role="page" id="pageAbout" data-add-back-btn="true">  <!-- About page -->
 			<div data-role="header" data-position="fixed" data-theme="a"> <!-- HeaderBar|Navigation -->
+				<img border="0" src="img/logo-small.png" alt="Logo" style="float:right;display:inline"/>
 				<h1>Gold: Discount Grocery</h1>
 			</div>  <!-- /HeaderBar|Navigation -->			
 			<div class="content-primary"> <!-- Content -->
@@ -290,15 +295,16 @@
 
 		<div data-role="page" id="pageError" data-add-back-btn="true">  <!-- Error page -->
 			<div data-role="header" data-position="fixed" data-theme="a"> <!-- HeaderBar|Navigation -->
+				<img border="0" src="img/logo-small.png" alt="Logo" style="float:right;display:inline"/>
 				<h1>Gold: Discount Grocery</h1>
 			</div>  <!-- /HeaderBar|Navigation -->			
 			<div class="content-primary"> <!-- Content -->
 				<div style="padding:10px;">
-				<div data-role="collapsible-set" data-theme="a" data-content-theme="d"> <!-- Browse Error placeholder -->
+				<div data-role="collapsible-set" data-theme="a"> <!-- Browse Error placeholder -->
 				<h2>Error:</h2>
 				<ul data-role="listview" data-icon="alert">
 					<li>
-						<h3>No Items Found.</h3>
+						<h3>An error has occurred.  Please try again.</h3>
 					</li>
 				</div> <!-- /Browse Error placeholder -->
 				</div>
@@ -319,6 +325,7 @@
 		
 		<div data-role="page" id="pageSearch" data-add-back-btn="true">  <!-- Search page -->
 			<div data-role="header" data-position="fixed" data-theme="a"> <!-- HeaderBar|Navigation -->
+				<img border="0" src="img/logo-small.png" alt="Logo" style="float:right;display:inline"/>
 				<h1>Gold: Discount Grocery</h1>
 			</div>  <!-- /HeaderBar|Navigation -->
 			<div data-role="content"> <!-- Content -->
@@ -365,6 +372,7 @@
 		
 		<div data-role="page" id="pageNewsFeed" data-add-back-btn="true">  <!-- News Feed page -->
 			<div data-role="header" data-position="fixed" data-theme="a"> <!-- HeaderBar|Navigation -->
+				<img border="0" src="img/logo-small.png" alt="Logo" style="float:right;display:inline"/>
 				<h1>Gold: Discount Grocery</h1>
 			</div>  <!-- /HeaderBar|Navigation -->
 			<div data-role="content"> <!-- Content -->
